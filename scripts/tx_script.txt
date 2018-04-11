@@ -1,0 +1,17 @@
+https://www.thousandeyes.com	60000
+open	/
+runScript	document.querySelector('div.menu-dropdown.solutions').style.display='block'
+click	link=Solutions Overview
+waitForPageToLoad	30000
+waitForElementPresent	id=trigger-solutions-video	10000
+click	id=trigger-solutions-video
+sleep	10000
+click	css=div.close-icon
+sleep	1000
+click	css=a.main-menu-link.search
+waitForPageToLoad	30000
+type	id=search-input	outages
+waitForElementPresent	h2.result-main1	10000
+sleep	1000
+click	css=h2.result-main1
+waitForPageToLoad	30000
